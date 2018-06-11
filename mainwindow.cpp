@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(ui->pushButton_3, &QPushButton::clicked, this, &MainWindow::close);
 
-    connect(ui->pushButton_2, &QPushButton::clicked, [&]() {
+    connect(ui->pushButton_2, &QPushButton::clicked, [this]() {
         ui->label_2->setText(ui->lineEdit_2->text());
     });
 }
